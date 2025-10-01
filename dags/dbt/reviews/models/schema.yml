@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: raw_dataset
+    tables:
+      - name: daily_beer_reviews
+        description: "Raw daily beer reviews ingested into BigQuery"
+
+models:
+  - name: stg_reviews
+    description: "Cleaned staging table for beer reviews"
+
+  - name: fact_reviews
+    description: "Fact table containing beer review events"
+    tests:
+      - unique:
+          column_name: review_id
+      - not_null:
+          column_name: review_overall
+
+  - name: dim_beers
+    description: "Beer dimension table with metadata for each beer"
+    tests:
+      - not_null:
+          column_name: beer_id
+
+  - name: dim_reviewers
+    description: "Dimension table of reviewers"
+    tests:
+      - not_null:
+          column_name: reviewer_id
+
+  - name: beer_insights
+    description: "Aggregated analytics of beers by rating and popularity"
+
+  - name: reviewer_profiles
+    description: "Reviewer activity and preferences"
+
+  - name: style_trends
+    description: "Beer style performance and rating trends over time"
