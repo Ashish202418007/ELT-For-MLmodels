@@ -12,3 +12,11 @@ gcp-credentials.json
 pgdata/
 .env
 logs/
+plugins/
+redisdata/
+spark/
+sparks/
+resources/
+scripts/
+config/
+pyproject.toml
