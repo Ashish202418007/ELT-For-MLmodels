@@ -15,7 +15,7 @@ The dataset is aggregated from the following Kaggle sources:
 1. [RateBeer Dataset — 3.0M+ reviews](https://www.kaggle.com/datasets/mahmoodtopiwala/ratebeer)  
 2. [Beer Advocate Dataset — 1.5M reviews](https://www.kaggle.com/datasets/thedevastator/1-5-million-beer-reviews-from-beer-advocate)  
 
-**Total:** ~4.5 million beer reviews including metadata and user ratings.
+**Total:** ~4.5 million beer reviews.
 
 ---
 
