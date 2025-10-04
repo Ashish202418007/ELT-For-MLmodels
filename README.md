@@ -105,5 +105,5 @@ The dataset is aggregated from the following Kaggle sources:
 ### Installation Steps
 1. Clone the repo:  
    ```bash
-   git clone https://github.com/your-org/beer-reviews-pipeline.git
+   g[it clone https://github.com/your-org/beer-reviews-pipeline.git
    cd beer-reviews-pipeline
