@@ -20,7 +20,7 @@ The dataset is aggregated from the following Kaggle sources:
 ---
 
 ## Architecture
-
+![architecture/pipeline](RecsysELT.png)
 ### Core Pipeline
 1. **Data Ingestion**  
    Kaggle datasets → PostgreSQL → Google Cloud Storage via Airflow.
